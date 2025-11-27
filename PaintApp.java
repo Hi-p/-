@@ -223,7 +223,7 @@ public class PaintApp {
 
         eraser.addActionListener(e -> {
             panel.currentColor = panel.getBackground();
-            panel.currentStrokeWidth = 30;
+            panel.currentStrokeWidth = strokeSlider.getValue();
         });
 
         strokeSlider.addChangeListener(e -> {
